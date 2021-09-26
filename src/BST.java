@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * @Author: Lydia MacBride, 19333944
  *
@@ -54,9 +52,9 @@ public class BST {
         }
 
         //Else recur through tree
-        if (key < root.key) {
+        if (key < node.key) {
             node.left = addNode(node.left, key);
-        } else if (key > root.key) {
+        } else if (key > node.key) {
             node.right = addNode(node.right, key);
         }
 

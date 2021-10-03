@@ -30,7 +30,7 @@ public class BST {
 
         //Key greater than root's key
         if (key > root.key) {
-            getNode(root.right, key);
+            return getNode(root.right, key);
         }
 
         //Key less than root's key
